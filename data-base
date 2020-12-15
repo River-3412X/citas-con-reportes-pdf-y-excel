@@ -1,0 +1,26 @@
+create datbase citas;
+use citas;
+
+create table bitacora(
+   id int AUTO_INCREMENT,
+   descripcion text NOT_NULL,
+   PRIMARY_KEY(id)
+);
+
+create table responsables(
+   id int AUTO_INCREMENT,
+   nombre varchar(100) NOT_NULL,
+   usuario varchar(100) NOT_NULL,
+   pass text NOT_NULL,
+   PRIMARY_KEY(id)
+);
+
+create table solicitantes(
+   id int AUTO_INCREMENT,
+   nombre VARCHAR(100) NOT_NULL,
+   telefono int NOT_NULL, 
+   asunto text NOT_NULL,
+   correo varchar(50) NOT_NULL,
+   fecha datetime NOT_NULL,
+   PRIMARY_KEY(id)
+);
